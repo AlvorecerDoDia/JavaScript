@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(0, 119, 255);
+    text-align: center;
+}
+
+header{
+    padding: 10px;
+    color: white;
+}
+
+section{
+    padding: 15px 15px;
+    width: 500px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(1, 23, 49, 0.767);
+    text-align: start;
+}
+
+div .caixas{
+    margin-top: 10px;
+}
+
+input[type=button]{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer a{
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+}
