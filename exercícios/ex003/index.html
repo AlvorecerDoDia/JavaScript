@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistemas de multas</title>
-</head>
-
-<body>
-    <h1>Sistemas de multas</h1>
-    <p>Coloque sua velocidade abaixo</p><br>
-
-    <label for="inputvel">Velocidade:</label>
-    <input type="number" name="inputvel" id="inputvel"><br>
-
-    <input id="resbnt" type="button" value="verificar"onclick="calcular()">
-    <div id="res"></div>
-</body>
-<script>
-    function calcular(){
-        var veltxt = document.querySelector('#inputvel')
-        var res = document.querySelector('#res')
-        var vel = Number(veltxt.value)
-        res.innerHTML = `<p>Sua velocidade é de ${vel}KM/h</p>`
-        if(vel > 60){
-            res.innerHTML += '<p>Você foi <strong>MULTADO</strong> por excesso de velocidade</p>'
+    <title>Lista to do</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(204, 200, 200);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
-        res.innerHTML += '<p>Sempre dirija com cinto de segurança!!</p>'}
-</script>
+      
+        ul li{
+            
+            list-style: none;
+        }
+</style>
+    </style>
+</head>
+<body>
+    <Form>
+        <input type="text" id="input" placeholder="Add a task"> <br>
+        <input type="submit" id="isubmit">
+    </Form>
 
+    <div>
+        <ul id="lista">
+
+        </ul>
+    </div>
+</body>
 </html>
